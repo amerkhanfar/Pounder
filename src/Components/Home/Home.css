@@ -45,7 +45,11 @@
   color: white;
   text-decoration: none;
 }
-
+.btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 .bt {
   border: 2px solid white;
   padding: 10px;
@@ -54,8 +58,7 @@
   text-decoration: none;
   border-radius: 20px;
   position: absolute;
-  transform: translateX(50%);
-  left: 37.5%;
+
   bottom: 60px;
   transition: all 0.5s;
 }
@@ -63,4 +66,49 @@
 .bt:hover {
   background-color: white;
   color: red;
+}
+@media screen and (max-width: 580px) {
+  .contain li {
+    font-size: 1.3rem;
+
+    transition: all 0.3s;
+  }
+
+  .contain li:hover {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+
+  .fa-hamburger {
+    font-size: 1.5rem;
+  }
+  .order {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contain li {
+    font-size: 0.7rem;
+
+    transition: all 0.3s;
+  }
+
+  .contain li:hover {
+    font-size: 0.5rem;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contain li {
+    font-size: 0.5rem;
+
+    transition: all 0.3s;
+  }
+
+  .contain li:hover {
+    font-size: 0.5rem;
+    text-decoration: underline;
+  }
 }

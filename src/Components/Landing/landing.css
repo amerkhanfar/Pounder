@@ -52,6 +52,23 @@ html {
   transform: translateY(-2rem) rotateY(20deg);
   box-shadow: -2rem 2rem 4rem #aaa;
 }
+
+@media screen and (max-width: 1270px) {
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-container p {
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 15px;
+    word-wrap: 1;
+    width: 600px;
+  }
+}
 /*End Of About US*/
 
 /* section 4*/

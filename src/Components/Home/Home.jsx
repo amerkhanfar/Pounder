@@ -30,12 +30,14 @@ const Home = ({ totalItems }) => {
 
             <div>
               <li>
-                <a href="/products">Order Now</a>
+                <a href="/products" className="order">
+                  Order Now
+                </a>
               </li>
             </div>
           </ul>
 
-          <div>
+          <div className="btn-container">
             <a href="/products" className="bt">
               Order Now
             </a>
