@@ -1,0 +1,66 @@
+.bck {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)),
+    url('../../assets/Background.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.list {
+  overflow: hidden;
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.list li {
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 2rem;
+}
+
+.contain {
+  overflow: hidden;
+  display: flex;
+}
+
+.contain li {
+  margin-left: 2rem;
+  transition: all 0.3s;
+}
+
+.contain li:hover {
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+
+.list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.bt {
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  border-radius: 20px;
+  position: absolute;
+  transform: translateX(50%);
+  left: 37.5%;
+  bottom: 60px;
+  transition: all 0.5s;
+}
+
+.bt:hover {
+  background-color: white;
+  color: red;
+}
