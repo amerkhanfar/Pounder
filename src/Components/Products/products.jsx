@@ -3,8 +3,9 @@ import { Grid } from '@material-ui/core';
 import Product from './product/product';
 import useStyles from './styles';
 import Navbar from '../Navbar/navbar';
+import Categories from '../Categories/categories';
 
-const Products = ({ products, onAddToCart, totalItems }) => {
+const Products = ({ products, onAddToCart, totalItems, categories }) => {
   const classes = useStyles();
   return (
     <main className={classes.content}>

@@ -87,7 +87,7 @@ const Landing = ({ totalItems }) => {
         <h1 class="section4-heading">Contact</h1>
         <div class="form-container">
           <img
-            src="../../assets/form-img.png"
+            src="../public/assets/form-img.png"
             alt="contact us"
             class="form-img"
           />

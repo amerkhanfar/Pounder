@@ -7,7 +7,9 @@ const Category = ({ categorie }) => {
     type: 'slug',
   });
 
-  const { data: product } = commerce.products.list();
+  const { data: product } = commerce.products.list({
+    category_slug: categorie.slug,
+  });
 
   return (
     <div>

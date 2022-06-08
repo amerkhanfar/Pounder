@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
 import Products from './Components/Products/products';
-import Navbar from './Components/Navbar/navbar';
-import Commerce from '@chec/commerce.js';
 import Cart from './Components/Cart/cart';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Categories from './Components/Categories/categories';
 import Checkout from './Components/CheckoutForm/Checkout/checkout';
 import Landing from './Components/Landing/landing';
 import Home from './Components/Home/Home';
@@ -33,6 +30,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    fetchCategories();
     fetchProducts();
     fetchCart();
   }, []);
@@ -80,11 +78,14 @@ const App = () => {
             exact
             path="/products"
             element={
-              <Products
-                products={products}
-                onAddToCart={handleAddToCart}
-                totalItems={cart.total_items}
-              />
+              <div>
+                <Products
+                  products={products}
+                  onAddToCart={handleAddToCart}
+                  totalItems={cart.total_items}
+                  categories={categories}
+                />
+              </div>
             }
           ></Route>
 

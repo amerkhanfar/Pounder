@@ -39,7 +39,7 @@ const Navbar = ({ totalItems }) => {
               Home
             </Link>
             <Link to="/about" className={classes.link}>
-              About Us
+              About
             </Link>
             <Link to="/products" className={classes.link}>
               Order

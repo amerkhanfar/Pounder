@@ -18,6 +18,7 @@ export default makeStyles((theme) => ({
     flexGrow: 1,
     alignItems: 'center',
     display: 'flex',
+    flexWrap: 'npwrap',
     textDecoration: 'none',
     color: 'white',
     fontFamily: 'arial',
