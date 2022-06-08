@@ -35,9 +35,6 @@ const Navbar = ({ totalItems }) => {
           </Typography>
 
           <div className={classes.bar}>
-            <Link to="/" className={classes.link}>
-              Home
-            </Link>
             <Link to="/about" className={classes.link}>
               About
             </Link>

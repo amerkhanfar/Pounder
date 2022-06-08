@@ -20,11 +20,7 @@ const Home = ({ totalItems }) => {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/about">About Us</a>
-              </li>
-
-              <li>
-                <a href="/products">Order</a>
+                <a href="/about">About</a>
               </li>
             </div>
 
