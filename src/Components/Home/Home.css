@@ -27,8 +27,8 @@
 }
 
 .contain {
-  overflow: hidden;
   display: flex;
+  margin-top: 15px;
 }
 
 .contain li {

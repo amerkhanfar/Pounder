@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar/navbar';
-import './landing.css';
+import './landing.modules.css';
 
 const Landing = ({ totalItems }) => {
   return (
@@ -12,18 +12,22 @@ const Landing = ({ totalItems }) => {
         </div>
 
         <div class="about-us-container">
-          <img
-            src="https://scontent.famm6-1.fna.fbcdn.net/v/t39.30808-6/220292879_126083203012522_3362942515008228384_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=a26aad&_nc_ohc=IceEHMEymzIAX9naC8_&_nc_ht=scontent.famm6-1.fna&oh=00_AT_noLdsOm7k4eV-qOWFo4PnucEMbr3bVlCzeaCnPmFHBA&oe=61C02FF3"
-            class="about-img"
-          />
+          <div className="aimage-container">
+            <img
+              src="https://scontent.famm6-1.fna.fbcdn.net/v/t39.30808-6/220292879_126083203012522_3362942515008228384_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=a26aad&_nc_ohc=IceEHMEymzIAX9naC8_&_nc_ht=scontent.famm6-1.fna&oh=00_AT_noLdsOm7k4eV-qOWFo4PnucEMbr3bVlCzeaCnPmFHBA&oe=61C02FF3"
+              class="about-img"
+            />
+          </div>
 
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-            aspernatur cumque fugit ducimus dolores sint dignissimos, ea,
-            perspiciatis vitae placeat repellendus quidem illum ex, totam odit
-            corporis quam ad nam commodi corrupti cupiditate esse. Excepturi
-            facere soluta ratione nemo optio.
-          </p>
+          <div className="talk-about">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
+              aspernatur cumque fugit ducimus dolores sint dignissimos, ea,
+              perspiciatis vitae placeat repellendus quidem illum ex, totam odit
+              corporis quam ad nam commodi corrupti cupiditate esse. Excepturi
+              facere soluta ratione nemo optio.
+            </p>
+          </div>
         </div>
       </main>
 
@@ -87,7 +91,7 @@ const Landing = ({ totalItems }) => {
         <h1 class="section4-heading">Contact</h1>
         <div class="form-container">
           <img
-            src="../public/assets/form-img.png"
+            src="../../assets/form-img.png"
             alt="contact us"
             class="form-img"
           />

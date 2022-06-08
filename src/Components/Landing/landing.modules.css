@@ -30,17 +30,27 @@ html {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 50px;
+  width: 100%;
 }
 .about-us-container p {
-  margin-top: 20px;
+  margin-top: 70px;
   line-height: 2;
   font-size: 20px;
   word-wrap: 1;
-  width: 765px;
 }
+
+.aimage-container {
+  width: 100%;
+  margin-left: 20px;
+}
+.talk-about {
+  width: 50%;
+  margin-right: 100px;
+}
+
 .about-img {
   margin-left: 100px;
-  width: 400px;
+  width: 80%;
   height: 400px;
   border-radius: 10px;
   box-shadow: -1rem 1rem 2rem #aaa;
@@ -54,19 +64,31 @@ html {
 }
 
 @media screen and (max-width: 1270px) {
+  .map {
+    width: 200px;
+    height: 200px;
+  }
   .about-us-container {
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .talk-about {
+    width: 30%;
 
+    margin-right: 200px;
+    font-size: 8px;
+  }
   .about-us-container p {
     margin-top: 20px;
+    margin-left: 70px;
     line-height: 2;
     font-size: 15px;
     word-wrap: 1;
-    width: 600px;
+    width: 300px;
+    text-align: center;
   }
 }
 /*End Of About US*/
